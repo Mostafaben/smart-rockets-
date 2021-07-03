@@ -19,9 +19,7 @@ class Population {
     for (var i = 0; i < this.popsize; i++) {
       this.rockets[i].fitness /= maxfit;
     }
-
     this.matingpool = [];
-
     for (var i = 0; i < this.popsize; i++) {
       var n = this.rockets[i].fitness * 100;
       for (var j = 0; j < n; j++) {
@@ -48,5 +46,4 @@ class Population {
       rocket.show();
     });
   }
-  saveBestGenerate() {}
 }
